@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-t1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="header-left-t2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="header-left-num">
+                        <div class="numero"></div>     
+                    </div>
+                    <div class="header-left-info">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="img">
+                        <img src="" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                Aperte a tecla:</br>
+                CONFIRMA para CONFIRMAR o voto</br>
+                CORRIGE para REINICIAR o voto
+            </div>
+        </div>
+        <audio src="audio/urnaTecla.mp3" class="audioTeclado"></audio>
+        <div class="teclado">
+            <div class="teclado-linha">
+                <div class="teclado-btn" onclick="clicou(1)">1</div>
+                <div class="teclado-btn" onclick="clicou(2)">2</div>
+                <div class="teclado-btn" onclick="clicou(3)">3</div>
+            </div>
+            <div class="teclado-linha">
+                <div class="teclado-btn" onclick="clicou(4)" >4</div>
+                <div class="teclado-btn" onclick="clicou(5)">5</div>
+                <div class="teclado-btn" onclick="clicou(6)">6</div>
+            </div>
+            <div class="teclado-linha">
+                <div class="teclado-btn" onclick="clicou(7)">7</div>
+                <div class="teclado-btn" onclick="clicou(8)">8</div>
+                <div class="teclado-btn" onclick="clicou(9)">9</div>
+            </div>
+            <div class="teclado-linha">
+                <div class="teclado-btn" onclick="clicou(0)">0</div>
+            </div>
+            <audio src="audio/urna.mp3" class="audioFim"></audio>
+            <div class="teclado-linha">
+                <div class="teclado-btn btn-branco" onclick="branco()">Branco</div>
+                <div class="teclado-btn btn-corrige" onclick="corrige()">Corrige</div>
+                <div class="teclado-btn btn-confirma" onclick="confirma()">Confirma</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/candidatos.js"></script>
+    <script src="js/script.js "></script>
+</body>
+</html>
